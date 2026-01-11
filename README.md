@@ -1,4 +1,4 @@
-### Importação de Bibliotecas
+### Library Imports
 
 ```python
 import requests

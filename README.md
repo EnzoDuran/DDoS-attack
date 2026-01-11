@@ -178,7 +178,7 @@ Passing the **send_request** function and the website URL to the futures so that
 - **`for future in as_completed(futures):`**: This loop iterates over each `Future` as it completes. This means the loop processes requests in the order they finish, not in the order they were started.
     - The advantage of using `as_completed` is that you can begin processing request results as soon as they complete, without waiting for all of them to finish.
 
-### Recuperando o Resultado
+### Retrieving the Result
 
 - **`future.result()`**: This method blocks until the `Future` is complete and then returns the result of the function that was submitted (in this case, `send_request`).
     - If the`send_request` function executed successfully, `result()` returns the value returned by `send_request` (the HTTP response content).
